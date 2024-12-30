@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'sai-app-tests' title`, () => {
+  it(`should have the 'modal-sai-app' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('sai-app-tests');
+    expect(app.title).toEqual('modal-sai-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, sai-app-tests');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, modal-sai-app');
   });
 });
